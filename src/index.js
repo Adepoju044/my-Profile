@@ -28,16 +28,10 @@ function Main() {
         not coding or preparing for a course. i like to read story books, to
         cook and eat, or to just watch some thriller movies
       </p>
-      <div>
-        <div>
-          <Button name="HTML + CSS" styles="button-1" />
-          <Button name="Javascript" styles="button-2" />
-        </div>
-        <div>
-          <Button name="Taiwindcss" styles="button-3" />
-          <Button name="React" styles="button-4" />
-        </div>
-      </div>
+      <Button name="HTML + CSS" styles="button-1" />
+      <Button name="Javascript" styles="button-2" />
+      <Button name="Taiwindcss" styles="button-3" />
+      <Button name="React" styles="button-4" />
     </div>
   );
 }
