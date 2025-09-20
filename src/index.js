@@ -3,6 +3,39 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
+const skills = [
+  {
+    skill: "HTML+CSS",
+    level: "advanced",
+    color: "#2662EA",
+  },
+  {
+    skill: "JavaScript",
+    level: "advanced",
+    color: "#EFD81D",
+  },
+  {
+    skill: "Web Design",
+    level: "advanced",
+    color: "#C3DCAF",
+  },
+  {
+    skill: "Git and GitHub",
+    level: "intermediate",
+    color: "#E84F33",
+  },
+  {
+    skill: "React",
+    level: "advanced",
+    color: "#60DAFB",
+  },
+  {
+    skill: "Svelte",
+    level: "beginner",
+    color: "#FF3B00",
+  },
+];
+
 function App() {
   return (
     <div className="container">
@@ -28,17 +61,29 @@ function Main() {
         not coding or preparing for a course. i like to read story books, to
         cook and eat, or to just watch some thriller movies
       </p>
-      <Button name="HTML + CSS" styles="button-1" />
-      <Button name="Javascript" styles="button-2" />
-      <Button name="Taiwindcss" styles="button-3" />
-      <Button name="React" styles="button-4" />
+      <Skill />
     </div>
   );
 }
-function Button(props) {
+function Skill() {
+  return (
+    <div>
+      {skills.map((skill) => (
+        <Button button={skill} />
+      ))}
+      ;
+    </div>
+  );
+}
+function Button({ button }) {
   return (
     <span className="button">
-      <button className={props.styles}>{props.name}</button>
+      <button className="button-1" style={{ backgroundColor: button.color }}>
+        {button.skill}
+        {button.level === "beginner" ? "👶" : ""}
+        {button.level === "intermediate" ? "👍" : ""}
+        {button.level === "advanced" ? "💪" : null}
+      </button>
     </span>
   );
 }
