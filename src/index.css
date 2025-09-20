@@ -20,11 +20,11 @@ body {
   justify-content: left;
   align-item: left;
   width: 26%;
-  height: 80vh;
+  height: 88vh;
 }
 .img {
   width: 381px;
-  height: 350px;
+  height: 353px;
   object-fit: cover;
   object-position: center;
 }
@@ -34,6 +34,7 @@ h1 {
   font-size: 40px;
   color: #333;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .paragraph {
@@ -41,72 +42,33 @@ h1 {
   font-weight: bold;
   margin-bottom: 10px;
   width: inherit;
+  margin-left: 5px;
 }
 
 .button {
   font-size: 16px;
   transition: all 0.3s ease;
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: inline-block;
+  margin-left: 22px;
 }
 .button-1 {
-  background-color: blue;
   border: none;
   height: 32px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 3px;
   margin-right: 6px;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .button-1:hover {
   opacity: 0.6;
   transition: opacity 0.3d ease-in-out;
-  transform: translateY(-2px);
-  cursor: pointer;
-}
-.button-2 {
-  background-color: #ffff00;
-  border: none;
-  height: 32px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 3px;
-  margin-right: 6px;
-}
-.button-2:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease-in-out;
-  transform: translateY(-2px);
-  cursor: pointer;
-}
-.button-3 {
-  background-color: #ff0000;
-  border: none;
-  height: 32px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 3px;
-  margin-right: 6px;
-}
-.button-3:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease-in-out;
-  transform: translateY(-2px);
-  cursor: pointer;
-}
-.button-4 {
-  background-color: #add8e6;
-  border: none;
-  height: 32px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 3px;
-  margin-right: 6px;
-  margin-top: 6px;
-}
-.button-4:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease-in-out;
   transform: translateY(-2px);
   cursor: pointer;
 }
